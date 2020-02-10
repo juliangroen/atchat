@@ -11,18 +11,18 @@
         <link rel="stylesheet" href="output.css" />
     </head>
     <body class="text-indigo-200 bg-gray-800 font-main">
-        <header class="flex flex-row items-center h-20 bg-indigo-800 shadow-lg">
+        <header class="flex flex-row items-center h-20 bg-indigo-800 filter-shadow">
             <a class="w-10 m-5" href="index.html">
-                <img class="w-10" src="./svg/logo.svg" alt="ATCHAT Logo" />
+                <img class="w-10 hover:filter-shadow" src="./svg/logo.svg" alt="ATCHAT Logo" />
             </a>
             <a
-                class="flex-grow text-5xl font-bold text-center text-indigo-200"
+                class="flex-grow text-5xl font-bold text-center text-indigo-200 hover:filter-shadow"
                 href="index.html"
             >
                 ATCHAT
             </a>
             <a class="w-8 m-5" href="#">
-                <img class="w-10" src="./svg/icon-menu.svg" alt="Menu Icon" />
+                <img class="w-10 hover:filter-shadow" src="./svg/icon-menu.svg" alt="Menu Icon" />
             </a>
         </header>
         <section class="flex flex-col justify-center text-3xl font-bold">
@@ -44,7 +44,9 @@
             </p>
             <img class="mt-10" src="./svg/undraw-chat.svg" alt="chat bubbles illustration">
             <div class="mx-auto mt-10">
-                <button class="bg-indigo-800 rounded-full text-lg px-12 py-2 font-bold">Sign Up</button>
+                <button class="bg-indigo-800 rounded-full text-lg px-12 py-2 font-bold hover:filter-shadow transform active:translate-y-px">
+                    <span class="hover:filter-shadow">Sign Up</span>
+                </button>
             </div>
         </section>
     </body>
