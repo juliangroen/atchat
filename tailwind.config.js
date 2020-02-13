@@ -1,12 +1,12 @@
 module.exports = {
-    theme: {
-        fontFamily: {
-            main: ['"Roboto Mono"', 'monospace'],
-        },
-        extend: {},
+  theme: {
+    fontFamily: {
+      main: ['"Roboto Mono"', "monospace"]
     },
-    variants: {
-        translate: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-    },
-    plugins: [],
+    extend: {}
+  },
+  variants: {
+    translate: ["responsive", "hover", "focus", "active", "group-hover"]
+  },
+  plugins: [require("@tailwindcss/custom-forms")]
 };

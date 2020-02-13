@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="text-blue-200 bg-gray-800 font-main">
+  <body class="relative text-blue-200 bg-gray-800 font-main">
     <!-- responsive fly-out menu -->
     <main class="absolute z-10 hidden w-screen lg:hidden">
       <section
@@ -63,6 +63,81 @@
         </section>
       </section>
     </main>
+    <!-- modal sign up form -->
+    <div class="absolute z-20 hidden w-screen h-screen bg-gray-800 opacity-75"></div>
+    <main class="absolute z-30 flex hidden w-screen h-screen p-8 md:pt-32">
+      <form
+        class="h-auto p-4 mx-auto mb-auto text-xl bg-gray-700 rounded-lg md:w-1/2 max-w-screen-sm"
+      >
+        <a class="flex flex-row justify-end" href="#">
+          <img
+            class="w-5 hover:filter-shadow"
+            src="./svg/icon-x.svg"
+            alt="Close Icon"
+          />
+        </a>
+        <fieldset class="flex flex-col px-4">
+          <label class="mb-4 font-bold" for="username">Username:</label>
+          <input
+            class="px-4 py-2 mb-4 bg-gray-800 rounded-lg"
+            type="text"
+            name="username"
+            id="username"
+            value=""
+          />
+          <label class="mb-4 font-bold" for="email">Email:</label>
+          <input
+            class="px-4 py-2 mb-4 bg-gray-800 rounded-lg"
+            type="text"
+            name="email"
+            id="email"
+            value=""
+          />
+          <label class="mb-4 font-bold" for="password">Password:</label>
+          <input
+            class="px-4 py-2 mb-4 bg-gray-800 rounded-lg"
+            type="password"
+            name="password"
+            id="password"
+            value=""
+          />
+          <label class="mb-4 font-bold" for="confirm">Confirm Password:</label>
+          <input
+            class="px-4 py-2 mb-4 bg-gray-800 rounded-lg"
+            type="password"
+            name="confirm"
+            id="confirm"
+            value=""
+          />
+          <label class="mt-4 mb-4" for="tos">
+            <input
+              class="w-4 h-4 text-blue-700 bg-gray-800 border-0 form-checkbox"
+              type="checkbox"
+              name="tos"
+              id="tos"
+            />
+            <span class="text-sm"
+              >Agree to our
+              <a class="text-blue-500" href="#">Terms of Service?</a></span
+            >
+          </label>
+          <label class="mb-4" for="promotional">
+            <input
+              class="w-4 h-4 text-blue-700 bg-gray-800 border-0 form-checkbox"
+              type="checkbox"
+              name="promotional"
+              id="promotional"
+            />
+            <span class="text-sm">Sign up for ATCHAT emails?</span>
+          </label>
+          <button
+            class="w-full py-2 mx-auto mt-10 mb-4 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px"
+          >
+            <span class="hover:filter-shadow">Submit</span>
+          </button>
+        </fieldset>
+      </form>
+    </main>
     <!-- normal page elements -->
     <header class="flex flex-row items-center h-20 bg-blue-700 filter-shadow">
       <a class="w-10 m-5" href="index.html">
@@ -101,8 +176,8 @@
         alt="chat bubbles illustration"
       />
       <button
-        class="mx-auto mt-10 w-48 bg-blue-800 rounded-full text-lg py-2 font-bold hover:filter-shadow transform active:translate-y-px"
-      >
+        class="mx-auto mt-10 w-48 bg-blue-700 rounded-full text-lg py-2 font-bold hover:filter-shadow transform active:translate-y-px"
+        class="mx-auto mt-10 w-48 bg-blue-700 rounded-full text-lg py-2 font-bold hover:filter-shadow transform active:translate-y-px"
         <span class="hover:filter-shadow">Sign Up</span>
       </button>
     </section>
