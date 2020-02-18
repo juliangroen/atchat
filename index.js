@@ -1,25 +1,49 @@
-const mainIconMenu = document.querySelector('#mainIconMenu');
+const navIconMenu = document.querySelector('#navIconMenu');
 const navLinkSignUp = document.querySelector('#navLinkSignUp');
+const navLinkLogIn = document.querySelector('#navLinkLogIn');
 const indexButtonSignUp = document.querySelector('#indexButtonSignUp');
 const menuIconClose = document.querySelector('#menuIconClose');
 const menuLinkSignUp = document.querySelector('#menuLinkSignUp');
+const menuButtonLogIn = document.querySelector('#menuButtonLogIn');
 const modalBackground = document.querySelector('#modalBackground');
 const modalForeground = document.querySelector('#modalForeground');
-const modalIconClose = document.querySelector('#modalIconClose');
+const modalFormSignUp = document.querySelector('#modalFormSignUp');
+const signUpIconClose = document.querySelector('#signUpIconClose');
+const modalFormLogIn = document.querySelector('#modalFormLogIn');
 const mobileMenu = document.querySelector('#mobileMenu');
 
-const openModalSignUp = function() {
+const openModal = function() {
   mobileMenu.classList.add('hidden');
   modalBackground.classList.remove('hidden');
   modalForeground.classList.remove('hidden');
 };
 
-const closeModalSignUp = function() {
+const closeModal = function() {
   modalBackground.classList.add('hidden');
   modalForeground.classList.add('hidden');
 };
 
-mainIconMenu.addEventListener('click', function() {
+const openSignUp = function() {
+  openModal();
+  modalFormSignUp.classList.remove('hidden');
+};
+
+const closeSignUp = function() {
+  closeModal();
+  modalFormSignUp.classList.add('hidden');
+};
+
+const openLogIn = function() {
+  openModal();
+  modalFormLogIn.classList.remove('hidden');
+};
+
+const closeLogIn = function() {
+  closeModal();
+  modalFormLogIn.classList.add('hidden');
+};
+
+navIconMenu.addEventListener('click', function() {
   mobileMenu.classList.remove('hidden');
 });
 
@@ -28,17 +52,29 @@ menuIconClose.addEventListener('click', function() {
 });
 
 menuLinkSignUp.addEventListener('click', function() {
-  openModalSignUp();
+  openSignUp();
 });
 
 navLinkSignUp.addEventListener('click', function() {
-  openModalSignUp();
+  openSignUp();
 });
 
 indexButtonSignUp.addEventListener('click', function() {
-  openModalSignUp();
+  openSignUp();
 });
 
-modalIconClose.addEventListener('click', function() {
-  closeModalSignUp();
+signUpIconClose.addEventListener('click', function() {
+  closeSignUp();
+});
+
+navLinkLogIn.addEventListener('click', function() {
+  openLogIn();
+});
+
+menuButtonLogIn.addEventListener('click', function() {
+  openLogIn();
+});
+
+logInIconClose.addEventListener('click', function() {
+  closeLogIn();
 });
