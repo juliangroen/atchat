@@ -1,6 +1,6 @@
 const mainIconMenu = document.querySelector('#mainIconMenu');
-const mainLinkSignUp = document.querySelector('#mainLinkSignUp');
-const mainButtonSignUp = document.querySelector('#mainButtonSignUp');
+const navLinkSignUp = document.querySelector('#navLinkSignUp');
+const indexButtonSignUp = document.querySelector('#indexButtonSignUp');
 const menuIconClose = document.querySelector('#menuIconClose');
 const menuLinkSignUp = document.querySelector('#menuLinkSignUp');
 const modalBackground = document.querySelector('#modalBackground');
@@ -31,11 +31,11 @@ menuLinkSignUp.addEventListener('click', function() {
   openModalSignUp();
 });
 
-mainLinkSignUp.addEventListener('click', function() {
+navLinkSignUp.addEventListener('click', function() {
   openModalSignUp();
 });
 
-mainButtonSignUp.addEventListener('click', function() {
+indexButtonSignUp.addEventListener('click', function() {
   openModalSignUp();
 });
 
