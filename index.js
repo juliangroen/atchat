@@ -12,8 +12,21 @@ const signUpIconClose = document.querySelector('#signUpIconClose');
 const modalFormLogIn = document.querySelector('#modalFormLogIn');
 const mobileMenu = document.querySelector('#mobileMenu');
 
+const openMobileMenu = function() {
+  mobileMenu.classList.remove('translate-x-double');
+  mobileMenu.classList.add('translate-x-0');
+  mobileMenu.classList.add('md:translate-x-full');
+  mobileMenu.classList.add('md:translate-x-full');
+};
+
+const closeMobileMenu = function() {
+  mobileMenu.classList.remove('translate-x-0');
+  mobileMenu.classList.remove('md:translate-x-full');
+  mobileMenu.classList.add('translate-x-double');
+};
+
 const openModal = function() {
-  mobileMenu.classList.add('hidden');
+  closeMobileMenu();
   modalBackground.classList.remove('hidden');
   modalForeground.classList.remove('hidden');
 };
@@ -44,11 +57,11 @@ const closeLogIn = function() {
 };
 
 navIconMenu.addEventListener('click', function() {
-  mobileMenu.classList.remove('hidden');
+  openMobileMenu();
 });
 
 menuIconClose.addEventListener('click', function() {
-  mobileMenu.classList.add('hidden');
+  closeMobileMenu();
 });
 
 menuLinkSignUp.addEventListener('click', function() {

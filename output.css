@@ -880,6 +880,12 @@ video {
   border-color: #63b3ed;
 }
 
+.animated-500 {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -14883,6 +14889,54 @@ video {
 .focus\:filter-shadow:focus {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.translate-x-double {
+  --transform-translate-x: 200%;
+}
+
+.-translate-x-double {
+  --transform-translate-x: -200%;
+}
+
+.translate-y-double {
+  --transform-translate-y: 200%;
+}
+
+.-translate-x-double {
+  --transform-translate-y: -200%;
+}
+
+.hover\:translate-x-double:hover {
+  --transform-translate-x: 200%;
+}
+
+.hover\:-translate-x-double:hover {
+  --transform-translate-x: -200%;
+}
+
+.hover\:translate-y-double:hover {
+  --transform-translate-y: 200%;
+}
+
+.hover\:-translate-x-double:hover {
+  --transform-translate-y: -200%;
+}
+
+.focus\:translate-x-double:focus {
+  --transform-translate-x: 200%;
+}
+
+.focus\:-translate-x-double:focus {
+  --transform-translate-x: -200%;
+}
+
+.focus\:translate-y-double:focus {
+  --transform-translate-y: 200%;
+}
+
+.focus\:-translate-x-double:focus {
+  --transform-translate-y: -200%;
 }
 
 @media (min-width: 640px) {
@@ -28889,6 +28943,54 @@ video {
   .sm\:focus\:filter-shadow:focus {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .sm\:translate-x-double {
+    --transform-translate-x: 200%;
+  }
+
+  .sm\:-translate-x-double {
+    --transform-translate-x: -200%;
+  }
+
+  .sm\:translate-y-double {
+    --transform-translate-y: 200%;
+  }
+
+  .sm\:-translate-x-double {
+    --transform-translate-y: -200%;
+  }
+
+  .sm\:hover\:translate-x-double:hover {
+    --transform-translate-x: 200%;
+  }
+
+  .sm\:hover\:-translate-x-double:hover {
+    --transform-translate-x: -200%;
+  }
+
+  .sm\:hover\:translate-y-double:hover {
+    --transform-translate-y: 200%;
+  }
+
+  .sm\:hover\:-translate-x-double:hover {
+    --transform-translate-y: -200%;
+  }
+
+  .sm\:focus\:translate-x-double:focus {
+    --transform-translate-x: 200%;
+  }
+
+  .sm\:focus\:-translate-x-double:focus {
+    --transform-translate-x: -200%;
+  }
+
+  .sm\:focus\:translate-y-double:focus {
+    --transform-translate-y: 200%;
+  }
+
+  .sm\:focus\:-translate-x-double:focus {
+    --transform-translate-y: -200%;
   }
 }
 
@@ -42897,6 +42999,54 @@ video {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+
+  .md\:translate-x-double {
+    --transform-translate-x: 200%;
+  }
+
+  .md\:-translate-x-double {
+    --transform-translate-x: -200%;
+  }
+
+  .md\:translate-y-double {
+    --transform-translate-y: 200%;
+  }
+
+  .md\:-translate-x-double {
+    --transform-translate-y: -200%;
+  }
+
+  .md\:hover\:translate-x-double:hover {
+    --transform-translate-x: 200%;
+  }
+
+  .md\:hover\:-translate-x-double:hover {
+    --transform-translate-x: -200%;
+  }
+
+  .md\:hover\:translate-y-double:hover {
+    --transform-translate-y: 200%;
+  }
+
+  .md\:hover\:-translate-x-double:hover {
+    --transform-translate-y: -200%;
+  }
+
+  .md\:focus\:translate-x-double:focus {
+    --transform-translate-x: 200%;
+  }
+
+  .md\:focus\:-translate-x-double:focus {
+    --transform-translate-x: -200%;
+  }
+
+  .md\:focus\:translate-y-double:focus {
+    --transform-translate-y: 200%;
+  }
+
+  .md\:focus\:-translate-x-double:focus {
+    --transform-translate-y: -200%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -56904,6 +57054,54 @@ video {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+
+  .lg\:translate-x-double {
+    --transform-translate-x: 200%;
+  }
+
+  .lg\:-translate-x-double {
+    --transform-translate-x: -200%;
+  }
+
+  .lg\:translate-y-double {
+    --transform-translate-y: 200%;
+  }
+
+  .lg\:-translate-x-double {
+    --transform-translate-y: -200%;
+  }
+
+  .lg\:hover\:translate-x-double:hover {
+    --transform-translate-x: 200%;
+  }
+
+  .lg\:hover\:-translate-x-double:hover {
+    --transform-translate-x: -200%;
+  }
+
+  .lg\:hover\:translate-y-double:hover {
+    --transform-translate-y: 200%;
+  }
+
+  .lg\:hover\:-translate-x-double:hover {
+    --transform-translate-y: -200%;
+  }
+
+  .lg\:focus\:translate-x-double:focus {
+    --transform-translate-x: 200%;
+  }
+
+  .lg\:focus\:-translate-x-double:focus {
+    --transform-translate-x: -200%;
+  }
+
+  .lg\:focus\:translate-y-double:focus {
+    --transform-translate-y: 200%;
+  }
+
+  .lg\:focus\:-translate-x-double:focus {
+    --transform-translate-y: -200%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -70910,5 +71108,53 @@ video {
   .xl\:focus\:filter-shadow:focus {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .xl\:translate-x-double {
+    --transform-translate-x: 200%;
+  }
+
+  .xl\:-translate-x-double {
+    --transform-translate-x: -200%;
+  }
+
+  .xl\:translate-y-double {
+    --transform-translate-y: 200%;
+  }
+
+  .xl\:-translate-x-double {
+    --transform-translate-y: -200%;
+  }
+
+  .xl\:hover\:translate-x-double:hover {
+    --transform-translate-x: 200%;
+  }
+
+  .xl\:hover\:-translate-x-double:hover {
+    --transform-translate-x: -200%;
+  }
+
+  .xl\:hover\:translate-y-double:hover {
+    --transform-translate-y: 200%;
+  }
+
+  .xl\:hover\:-translate-x-double:hover {
+    --transform-translate-y: -200%;
+  }
+
+  .xl\:focus\:translate-x-double:focus {
+    --transform-translate-x: 200%;
+  }
+
+  .xl\:focus\:-translate-x-double:focus {
+    --transform-translate-x: -200%;
+  }
+
+  .xl\:focus\:translate-y-double:focus {
+    --transform-translate-y: 200%;
+  }
+
+  .xl\:focus\:-translate-x-double:focus {
+    --transform-translate-y: -200%;
   }
 }

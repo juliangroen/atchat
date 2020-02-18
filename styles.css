@@ -2,12 +2,34 @@
 
 @tailwind components;
 
+.animated-500 {
+  @apply transition duration-500 ease-in-out; 
+}
+
 @tailwind utilities;
 
 @responsive {
     @variants hover, focus {
         .filter-shadow {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    @variants hover, focus {
+        .translate-x-double {
+            --transform-translate-x: 200%;
+        }
+
+        .-translate-x-double {
+            --transform-translate-x: -200%;
+        }
+
+        .translate-y-double {
+            --transform-translate-y: 200%;
+        }
+
+        .-translate-x-double {
+            --transform-translate-y: -200%;
         }
     }
 }
