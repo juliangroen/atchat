@@ -27,21 +27,17 @@ const closeMobileMenu = () => {
 
 const openModal = () => {
   closeMobileMenu();
-  modalBackground.classList.toggle('invisible');
-  modalForeground.classList.toggle('invisible');
-  modalBackground.classList.add('visible', 'opacity-75');
-  modalForeground.classList.add('visible', 'opacity-100');
+  modalBackground.classList.remove('opacity-0', 'pointer-events-none');
+  modalBackground.classList.add('opacity-75', 'pointer-events-auto');
+  modalForeground.classList.remove('opacity-0', 'pointer-events-none');
+  modalForeground.classList.add('opacity-100', 'pointer-events-auto');
 };
 
 const closeModal = () => {
-  modalBackground.classList.remove('opacity-75');
-  modalForeground.classList.remove('opacity-100');
-  modalBackground.classList.add('opacity-0');
-  modalForeground.classList.add('opacity-0');
-  modalBackground.classList.remove('visible');
-  modalForeground.classList.remove('visible');
-  modalBackground.classList.add('invisible');
-  modalForeground.classList.add('invisible');
+  modalBackground.classList.add('opacity-0', 'pointer-events-none');
+  modalBackground.classList.remove('opacity-75', 'pointer-events-auto');
+  modalForeground.classList.add('opacity-0', 'pointer-events-none');
+  modalForeground.classList.remove('opacity-100', 'pointer-events-auto');
 };
 
 const openSignUp = () => {
