@@ -3,7 +3,8 @@ module.exports = {
     fontFamily: {
       main: ['"Roboto Mono"', "monospace"]
     },
-    extend: {}
+    extend: {
+    }
   },
   variants: {
     translate: ["responsive", "hover", "focus", "active", "group-hover"]
