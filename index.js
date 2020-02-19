@@ -8,8 +8,10 @@ const menuButtonLogIn = document.querySelector('#menuButtonLogIn');
 const modalBackground = document.querySelector('#modalBackground');
 const modalForeground = document.querySelector('#modalForeground');
 const modalFormSignUp = document.querySelector('#modalFormSignUp');
+const SignUpButtonSubmit = document.querySelector('#SignUpButtonSubmit');
 const signUpIconClose = document.querySelector('#signUpIconClose');
 const modalFormLogIn = document.querySelector('#modalFormLogIn');
+const logInButtonLogin = document.querySelector('#logInButtonLogin');
 const mobileMenu = document.querySelector('#mobileMenu');
 
 const openMobileMenu = () => {
@@ -94,4 +96,16 @@ menuButtonLogIn.addEventListener('click', () => {
 
 logInIconClose.addEventListener('click', () => {
   closeLogIn();
+});
+
+signUpButtonSubmit.addEventListener('click', (e) => {
+  e.preventDefault();
+  closeSignUp();
+  modalFormSignUp.reset();
+});
+
+logInButtonLogin.addEventListener('click', (e) => {
+  e.preventDefault();
+  closeLogIn();
+  modalFormLogIn.reset();
 });
