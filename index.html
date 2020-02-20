@@ -15,31 +15,31 @@
     <!-- responsive fly-out menu -->
     <section
       id="mobileMenu"
-      class="absolute inset-y-0 right-0 z-20 flex flex-col w-0 h-full overflow-hidden text-blue-200 bg-gray-800 transition-width-200 lg:hidden"
+      class="absolute inset-y-0 right-0 z-20 flex flex-col w-0 h-full overflow-hidden text-blue-200 bg-gray-800 transition-width-200 md:filter-shadow-left lg:hidden"
       >
       <header class="flex flex-row items-center justify-end mx-5 md:mt-5">
         <a class="md:hidden" href="/">
           <img
-            class="w-10 text-blue-200 fill-current hover:filter-shadow"
+            class="w-10 text-blue-200 fill-current hover:filter-shadow-bottom"
             src="./svg/logo.svg"
             alt="ATCHAT Logo"
             />
         </a>
       <a
-        class="flex-grow pl-4 text-5xl font-bold text-center text-blue-200 hover:filter-shadow md:hidden"
+        class="flex-grow pl-4 text-5xl font-bold text-center text-blue-200 hover:filter-shadow-bottom md:hidden"
         href="/"
         >
         ATCHAT
       </a>
         <a id="menuIconClose" href="#">
           <img
-            class="h-8 pl-4 hover:filter-shadow"
+            class="h-8 pl-4 hover:filter-shadow-bottom"
             src="./svg/icon-x.svg"
             alt="Close Icon"
             />
         </a>
       </header>
-      <section
+      <main
         class="flex flex-col flex-grow h-full text-3xl font-bold"
         >
         <a href="#" id="menuLinkSignUp" class="mt-12 text-center">
@@ -53,31 +53,31 @@
         </a>
         <a href="#" class="mt-24 text-center">
           <button
-            class="w-48 py-2 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px"
+            class="w-48 py-2 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow-bottom transform active:translate-y-px"
             id="menuButtonLogIn"
             >
-            <span class="hover:filter-shadow">Log In</span>
+            <span class="hover:filter-shadow-bottom">Log In</span>
           </button>
         </a>
         <p class="mt-auto mb-5 text-sm text-center">
           <span class="text-xl">&#169;</span>2020 ATCHAT INC.
         </p>
-      </section>
+      </main>
     </section>
 
     <!-- modal elements -->
     <div id="modalBackground" class="absolute z-20 w-screen h-screen bg-gray-800 opacity-0 pointer-events-none animated-500"></div>
-    <main id="modalForeground" class="absolute z-30 flex w-screen h-screen p-2 opacity-0 pointer-events-none animated-500">
+    <section id="modalForeground" class="absolute z-30 flex w-screen h-screen p-2 opacity-0 pointer-events-none animated-500">
 
       <!-- signup form elements -->
       <form
         id="modalFormSignUp"
-        class="hidden h-auto p-4 mx-auto my-auto text-xl bg-gray-700 rounded-lg filter-shadow"
+        class="hidden h-auto p-4 mx-auto my-auto text-xl bg-gray-700 rounded-lg filter-shadow-bottom"
         >
         <a class="absolute top-0 right-0 p-4" href="#">
           <img
             id="signUpIconClose"
-            class="w-6 hover:filter-shadow"
+            class="w-6 hover:filter-shadow-bottom"
             src="./svg/icon-x.svg"
             alt="Close Icon"
             />
@@ -119,7 +119,7 @@
               />
             <span class="text-sm"
                   >Agree to our
-                  <a class="text-blue-500 hover:filter-shadow" href="#">Terms of Service?</a></span
+                  <a class="text-blue-500 hover:filter-shadow-bottom" href="#">Terms of Service?</a></span
                 >
           </label>
           <label class="mb-4" for="promotional">
@@ -131,10 +131,10 @@
             <span class="text-sm">Sign up for ATCHAT emails?</span>
           </label>
           <button
-            class="w-full py-2 mx-auto mb-4 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px"
+            class="w-full py-2 mx-auto mb-4 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow-bottom transform active:translate-y-px"
             id="signUpButtonSubmit"
             >
-            <span class="hover:filter-shadow">Submit</span>
+            <span class="hover:filter-shadow-bottom">Submit</span>
           </button>
         </fieldset>
       </form>
@@ -142,12 +142,12 @@
       <!-- login form elements -->
       <form
         id="modalFormLogIn"
-        class="hidden h-auto p-4 mx-auto my-auto text-xl bg-gray-700 rounded-lg filter-shadow"
+        class="hidden h-auto p-4 mx-auto my-auto text-xl bg-gray-700 rounded-lg filter-shadow-bottom"
         >
         <a class="absolute top-0 right-0 p-4" href="#">
           <img
             id="logInIconClose"
-            class="w-6 hover:filter-shadow"
+            class="w-6 hover:filter-shadow-bottom"
             src="./svg/icon-x.svg"
             alt="Close Icon"
             />
@@ -167,30 +167,30 @@
             name="password"
             value=""
             />
-          <a href="#" class="mb-4 text-sm text-center text-blue-400 hover:filter-shadow">Forgot your password?</a>
+          <a href="#" class="mb-4 text-sm text-center text-blue-400 hover:filter-shadow-bottom">Forgot your password?</a>
           <button
-            class="w-full py-2 mx-auto mb-4 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px"
+            class="w-full py-2 mx-auto mb-4 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow-bottom transform active:translate-y-px"
             id="logInButtonLogin"
             >
-            <span class="hover:filter-shadow">Log In</span>
+            <span class="hover:filter-shadow-bottom">Log In</span>
           </button>
         </fieldset>
       </form>
-    </main>
+    </section>
 
     <!-- normal page elements -->
-    <header class="h-20 bg-blue-700 filter-shadow">
+    <header class="h-20 bg-blue-700 filter-shadow-bottom">
       <nav class="flex flex-row items-center px-5 mx-auto max-w-screen-lg">
         <a class="w-10" href="/">
           <img
-            class="w-10 hover:filter-shadow"
+            class="w-10 hover:filter-shadow-bottom"
             src="./svg/logo.svg"
             alt="ATCHAT Logo"
             />
         </a>
         <span class="flex-grow text-center md:text-left">
           <a
-            class="pl-4 text-5xl font-bold text-blue-200 hover:filter-shadow"
+            class="pl-4 text-5xl font-bold text-blue-200 hover:filter-shadow-bottom"
             href="/"
             >
             ATCHAT
@@ -198,22 +198,22 @@
         </span>
         <a class="lg:hidden" href="#">
           <img
-            class="h-8 pl-4 hover:filter-shadow"
+            class="h-8 pl-4 hover:filter-shadow-bottom"
             id="navIconMenu"
             src="./svg/icon-menu.svg"
             alt="Menu Icon"
             />
         </a>
         <div class="hidden mr-5 text-lg font-bold lg:inline-block">
-          <a class="pl-4 hover:filter-shadow" href="/">Download</a>
-          <a class="pl-4 hover:filter-shadow" href="/">Support</a>
+          <a class="pl-4 hover:filter-shadow-bottom" href="/">Download</a>
+          <a class="pl-4 hover:filter-shadow-bottom" href="/">Support</a>
           <span class="pl-4">|</span>
-          <a id="navLinkSignUp" class="pl-4 hover:filter-shadow" href="#">Sign Up</a>
-          <a id="navLinkLogIn" class="pl-4 hover:filter-shadow" href="#">Log In</a>
+          <a id="navLinkSignUp" class="pl-4 hover:filter-shadow-bottom" href="#">Sign Up</a>
+          <a id="navLinkLogIn" class="pl-4 hover:filter-shadow-bottom" href="#">Log In</a>
         </div>
       </nav>
     </header>
-    <section class="flex flex-col flex-wrap justify-center text-3xl font-bold">
+    <main class="flex flex-col flex-wrap justify-center text-3xl font-bold">
       <p class="flex flex-col justify-center mt-10 text-center lg:flex-row">
         <span>Decentralized,</span>
         <span class="lg:pl-4">Distributed,</span>
@@ -232,10 +232,10 @@
         />
       <button
         id="indexButtonSignUp"
-        class="w-48 py-2 mx-auto mt-10 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px">
-        <span class="hover:filter-shadow">Sign Up</span>
+        class="w-48 py-2 mx-auto mt-10 mb-4 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow-bottom transform active:translate-y-px">
+        <span class="hover:filter-shadow-bottom">Sign Up</span>
       </button>
-    </section>
+    </main>
 
     <script src="index.js"></script>
 

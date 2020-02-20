@@ -11,7 +11,13 @@
 @responsive {
 
   @variants hover, focus {
-    .filter-shadow {
+    .filter-shadow-bottom {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  @variants hover, focus {
+    .filter-shadow-left {
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
   }
