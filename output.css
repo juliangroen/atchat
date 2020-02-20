@@ -14828,6 +14828,10 @@ video {
   transition-property: transform;
 }
 
+.transition-width {
+  transition-property: width;
+}
+
 .ease-linear {
   transition-timing-function: linear;
 }
@@ -14889,6 +14893,18 @@ video {
 .focus\:filter-shadow:focus {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.transition-width-200{
+  transition: width 200ms ease-in-out;
+}
+
+.hover\:transition-width-200:hover{
+  transition: width 200ms ease-in-out;
+}
+
+.focus\:transition-width-200:focus{
+  transition: width 200ms ease-in-out;
 }
 
 .translate-x-double {
@@ -28882,6 +28898,10 @@ video {
     transition-property: transform;
   }
 
+  .sm\:transition-width {
+    transition-property: width;
+  }
+
   .sm\:ease-linear {
     transition-timing-function: linear;
   }
@@ -28943,6 +28963,18 @@ video {
   .sm\:focus\:filter-shadow:focus {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .sm\:transition-width-200{
+    transition: width 200ms ease-in-out;
+  }
+
+  .sm\:hover\:transition-width-200:hover{
+    transition: width 200ms ease-in-out;
+  }
+
+  .sm\:focus\:transition-width-200:focus{
+    transition: width 200ms ease-in-out;
   }
 
   .sm\:translate-x-double {
@@ -42937,6 +42969,10 @@ video {
     transition-property: transform;
   }
 
+  .md\:transition-width {
+    transition-property: width;
+  }
+
   .md\:ease-linear {
     transition-timing-function: linear;
   }
@@ -42998,6 +43034,18 @@ video {
   .md\:focus\:filter-shadow:focus {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .md\:transition-width-200{
+    transition: width 200ms ease-in-out;
+  }
+
+  .md\:hover\:transition-width-200:hover{
+    transition: width 200ms ease-in-out;
+  }
+
+  .md\:focus\:transition-width-200:focus{
+    transition: width 200ms ease-in-out;
   }
 
   .md\:translate-x-double {
@@ -56992,6 +57040,10 @@ video {
     transition-property: transform;
   }
 
+  .lg\:transition-width {
+    transition-property: width;
+  }
+
   .lg\:ease-linear {
     transition-timing-function: linear;
   }
@@ -57053,6 +57105,18 @@ video {
   .lg\:focus\:filter-shadow:focus {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .lg\:transition-width-200{
+    transition: width 200ms ease-in-out;
+  }
+
+  .lg\:hover\:transition-width-200:hover{
+    transition: width 200ms ease-in-out;
+  }
+
+  .lg\:focus\:transition-width-200:focus{
+    transition: width 200ms ease-in-out;
   }
 
   .lg\:translate-x-double {
@@ -71047,6 +71111,10 @@ video {
     transition-property: transform;
   }
 
+  .xl\:transition-width {
+    transition-property: width;
+  }
+
   .xl\:ease-linear {
     transition-timing-function: linear;
   }
@@ -71108,6 +71176,18 @@ video {
   .xl\:focus\:filter-shadow:focus {
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .xl\:transition-width-200{
+    transition: width 200ms ease-in-out;
+  }
+
+  .xl\:hover\:transition-width-200:hover{
+    transition: width 200ms ease-in-out;
+  }
+
+  .xl\:focus\:transition-width-200:focus{
+    transition: width 200ms ease-in-out;
   }
 
   .xl\:translate-x-double {

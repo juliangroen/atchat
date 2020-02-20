@@ -4,6 +4,9 @@ module.exports = {
       main: ['"Roboto Mono"', "monospace"]
     },
     extend: {
+      transitionProperty: {
+        'width': 'width'
+      }
     }
   },
   variants: {
