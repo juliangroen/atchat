@@ -10,60 +10,60 @@
       />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="relative overflow-x-hidden text-blue-200 bg-gray-800 font-main">
+  <body class="text-blue-200 bg-gray-800 font-main">
 
     <!-- responsive fly-out menu -->
-      <section
-        id="mobileMenu"
-        class="absolute z-20 flex flex-col w-screen min-h-screen text-blue-200 bg-gray-800 md:border-l-8 md:border-gray-700 md:w-1/2 transform translate-x-double animated-500 lg:hidden"
-        >
-        <header class="flex flex-row items-center justify-end h-20 px-5">
-          <a class="md:hidden" href="index.html">
-            <img
-              class="w-10 text-blue-200 fill-current hover:filter-shadow"
-              src="./svg/logo.svg"
-              alt="ATCHAT Logo"
-              />
-          </a>
-        <a
-          class="flex-grow pl-4 text-5xl font-bold text-center text-blue-200 hover:filter-shadow md:hidden"
-          href="index.html"
-          >
-          ATCHAT
+    <section
+      id="mobileMenu"
+      class="absolute inset-y-0 right-0 z-20 flex flex-col w-0 h-full overflow-hidden text-blue-200 bg-gray-800 transition-width-200 lg:hidden"
+      >
+      <header class="flex flex-row items-center justify-end mx-5 md:mt-5">
+        <a class="md:hidden" href="index.html">
+          <img
+            class="w-10 text-blue-200 fill-current hover:filter-shadow"
+            src="./svg/logo.svg"
+            alt="ATCHAT Logo"
+            />
         </a>
-          <a id="menuIconClose" href="#">
-            <img
-              class="h-8 pl-4 hover:filter-shadow"
-              src="./svg/icon-x.svg"
-              alt="Close Icon"
-              />
-          </a>
-        </header>
-        <section
-          class="flex flex-col flex-grow h-full min-h-full text-3xl font-bold"
-          >
-          <a href="#" id="menuLinkSignUp" class="mt-12 text-center">
-            Sign Up
-          </a>
-          <a href="#" class="mt-24 text-center">
-            Download
-          </a>
-          <a href="#" class="mt-24 text-center">
-            Support
-          </a>
-          <a href="#" class="mt-24 text-center">
-            <button
-              class="w-48 py-2 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px"
-              id="menuButtonLogIn"
-              >
-              <span class="hover:filter-shadow">Log In</span>
-            </button>
-          </a>
-          <p class="mt-auto mb-5 text-sm text-center">
-            <span class="text-xl">&#169;</span>2020 ATCHAT INC.
-          </p>
-        </section>
+      <a
+        class="flex-grow pl-4 text-5xl font-bold text-center text-blue-200 hover:filter-shadow md:hidden"
+        href="index.html"
+        >
+        ATCHAT
+      </a>
+        <a id="menuIconClose" href="#">
+          <img
+            class="h-8 pl-4 hover:filter-shadow"
+            src="./svg/icon-x.svg"
+            alt="Close Icon"
+            />
+        </a>
+      </header>
+      <section
+        class="flex flex-col flex-grow h-full text-3xl font-bold"
+        >
+        <a href="#" id="menuLinkSignUp" class="mt-12 text-center">
+          Sign Up
+        </a>
+        <a href="#" class="mt-24 text-center">
+          Download
+        </a>
+        <a href="#" class="mt-24 text-center">
+          Support
+        </a>
+        <a href="#" class="mt-24 text-center">
+          <button
+            class="w-48 py-2 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px"
+            id="menuButtonLogIn"
+            >
+            <span class="hover:filter-shadow">Log In</span>
+          </button>
+        </a>
+        <p class="mt-auto mb-5 text-sm text-center">
+          <span class="text-xl">&#169;</span>2020 ATCHAT INC.
+        </p>
       </section>
+    </section>
 
     <!-- modal elements -->
     <div id="modalBackground" class="absolute z-20 w-screen h-screen bg-gray-800 opacity-0 pointer-events-none animated-500"></div>

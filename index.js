@@ -14,17 +14,29 @@ const modalFormLogIn = document.querySelector('#modalFormLogIn');
 const logInButtonLogin = document.querySelector('#logInButtonLogin');
 const mobileMenu = document.querySelector('#mobileMenu');
 
+// const openMobileMenu = () => {
+//   mobileMenu.classList.remove('translate-x-double');
+//   mobileMenu.classList.add('translate-x-0');
+//   mobileMenu.classList.add('md:translate-x-full');
+//   mobileMenu.classList.add('md:translate-x-full');
+// };
+
+// const closeMobileMenu = () => {
+//   mobileMenu.classList.remove('translate-x-0');
+//   mobileMenu.classList.remove('md:translate-x-full');
+//   mobileMenu.classList.add('translate-x-double');
+// };
+
 const openMobileMenu = () => {
-  mobileMenu.classList.remove('translate-x-double');
-  mobileMenu.classList.add('translate-x-0');
-  mobileMenu.classList.add('md:translate-x-full');
-  mobileMenu.classList.add('md:translate-x-full');
+  mobileMenu.classList.remove('w-0');
+  mobileMenu.classList.add('w-full', 'md:w-1/2');
+  mobileMenu.classList.add('md:border-l-8', 'md:border-gray-700');
 };
 
 const closeMobileMenu = () => {
-  mobileMenu.classList.remove('translate-x-0');
-  mobileMenu.classList.remove('md:translate-x-full');
-  mobileMenu.classList.add('translate-x-double');
+  mobileMenu.classList.add('w-0');
+  mobileMenu.classList.remove('w-full', 'md:w-1/2');
+  mobileMenu.classList.remove('md:border-l-8', 'md:border-gray-700');
 };
 
 const openModal = () => {
