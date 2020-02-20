@@ -74,7 +74,7 @@
         id="modalFormSignUp"
         class="hidden h-auto p-4 mx-auto my-auto text-xl bg-gray-700 rounded-lg filter-shadow"
         >
-        <a class="flex flex-row justify-end -mb-3" href="#">
+        <a class="absolute top-0 right-0 p-4" href="#">
           <img
             id="signUpIconClose"
             class="w-6 hover:filter-shadow"
@@ -119,7 +119,7 @@
               />
             <span class="text-sm"
                   >Agree to our
-                  <a class="text-blue-500" href="#">Terms of Service?</a></span
+                  <a class="text-blue-500 hover:filter-shadow" href="#">Terms of Service?</a></span
                 >
           </label>
           <label class="mb-4" for="promotional">
@@ -144,7 +144,7 @@
         id="modalFormLogIn"
         class="hidden h-auto p-4 mx-auto my-auto text-xl bg-gray-700 rounded-lg filter-shadow"
         >
-        <a class="flex flex-row justify-end -mb-3" href="#">
+        <a class="absolute top-0 right-0 p-4" href="#">
           <img
             id="logInIconClose"
             class="w-6 hover:filter-shadow"
@@ -162,11 +162,12 @@
             />
           <label class="mb-4 font-bold" for="password">Password:</label>
           <input
-            class="px-4 py-2 mb-6 bg-gray-800 rounded-lg"
+            class="px-4 py-2 mb-4 bg-gray-800 rounded-lg"
             type="password"
             name="password"
             value=""
             />
+          <a href="#" class="mb-4 text-sm text-center text-blue-400 hover:filter-shadow">Forgot your password?</a>
           <button
             class="w-full py-2 mx-auto mb-4 text-lg font-bold bg-blue-700 rounded-full hover:filter-shadow transform active:translate-y-px"
             id="logInButtonLogin"
